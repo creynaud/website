@@ -38,9 +38,6 @@ else:
     AWS_ACCESS_KEY_ID = os.environ['AWS_ACCESS_KEY_ID']
     AWS_SECRET_ACCESS_KEY = os.environ['AWS_SECRET_ACCESS_KEY']
     AWS_STORAGE_BUCKET_NAME = 'clairereynaud'
-    # necessary to fix manage.py collectstatic command to only upload
-    # changed files instead of all files
-    AWS_PRELOAD_METADATA = True
 
     DEFAULT_FILE_STORAGE = 'claire.s3utils.MediaRootS3BotoStorage'
     STATICFILES_STORAGE = 'claire.s3utils.StaticRootS3BotoStorage'
