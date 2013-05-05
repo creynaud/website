@@ -1,0 +1,7 @@
+.container {
+	@include grid(12);
+}
+
+header, footer, content {
+	@include clearfix;
+}

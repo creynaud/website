@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% load sekizai_tags staticfiles %}
+
+{% block content %}
+<div class="container">
+	<div class="pitch">
+		<h1>Claire Reynaud</h1>
+		<p>Mobile and Cloud Software Engineer</p>
+	</div>
+</div>
+<div class="full-width-block">
+	<div class="container">
+		<img src="{% static "core/img/Cloud.png" %}">
+		<img src="{% static "core/img/iOS.png" %}">
+		<img src="{% static "core/img/Android.png" %}">
+		<div class="about-me">
+			<h2>About me</h2>
+			<p>Hi, my name is Claire. This is my personal website. I am a mobile and cloud software engineer with 8 years experience.
+			Above all I like to build software that brings value to its users. I am also a big fan of Lean Start-up and Agile methodologies like Scrum.
+			I have been working for startups (Trango VP, acquired by VMware) as well as big companies (VMware, Yahoo).
+			I am currently working for Epyx in Lausanne, Switzerland.</p>
+			<br>
+			<p>I think Software Engineering is an amazing craft, and I do care about my craft. I try to
+			improve my skills all the time, by learning from others or on my own. I am also a loud speaker and I always speak
+			my own mind based on my rational analysis.</p>
+			<br>
+			<h2>Personal projects</h2>
+			<p>Right now, I am working on an iOS localization service called <a href="https://www.babelbytes.com">BabelBytes</a>.</p>
+			<br><p>On BabelBytes, iOS app developers can get their app translated by native speakers. Anyone can become a translator, provided that he speaks English fluently.</p>
+			<br><p>This project is keeping me up at night for several reasons:</p>
+			<ul>
+			<li>1. I am very interested in experimenting on the Minimal Viable Product concept, from the Lean start-up methodology</li>
+			<li>2. I wanted to try out a cloud PAAS provider with a real project (BabelBytes is running on Heroku. It also uses Amazon S3 for file storage.)</li>
+			<li>3. I needed to improve my web development skills, because in my opinion such skills are now mandatory for a mobile developer</li>
+			<li></li>
+			</ul>
+		</div>
+		<div class="twitter">
+			<a class="twitter-timeline"  href="https://twitter.com/ClaireReynaud"  data-widget-id="331042761602121728">Tweets by @ClaireReynaud</a>
+		</div>
+		</div>
+</div>
+
+{% addtoblock "js" %}
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+{% endaddtoblock %}
+
+{% endblock %}

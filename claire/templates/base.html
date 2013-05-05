@@ -1,0 +1,40 @@
+{% load staticfiles sekizai_tags i18n %}<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>{% block title %}Claire Reynaud's personal website{% endblock %}</title>
+		<meta name="keywords" content="Claire Reynaud, Homepage, CV, cv, resume, Django, iOS, iPhone, iPad, Android, jenkins, testing, JEE, Spring, java, Objective-C, JPA, Hibernate, Postgresql, CouchDB, git, Intellij, Linux, REST, Code Coverage, Selenium, Lean start-up, Scrum, Agile Methodologies, Mock"></meta>
+		<link rel="stylesheet" href="{% static "core/css/screen.css" %}">
+		{% block extrahead %}{% endblock %}
+		{% render_block "css" %}
+	</head>
+	<body>
+		<div id="wrapper">
+			<div>
+				<div class="container">
+					<header>
+						<div id="left-header">
+							<img src="{% static "core/img/claire.jpg" %}" style="width: 150px">
+						</div>
+						<div id="right-header">
+							<a href="/">{% trans "HOME" %}</a>
+							<a href="https://www.babelbytes.com">{% trans "iOS LOCALIZATION SERVICE" %}</a>
+						</div>
+					</header>
+				</div>
+			</div>
+			<div id="content">
+				{% block content %}{% endblock %}
+			</div>
+			<div id="push"></div>
+		</div>
+		<div>
+			<div class="container">
+				<footer>
+					<div class="left"><a href="mailto:info@clairereynaud.net">CONTACT</a></div>
+				</footer>
+			</div>
+		</div>
+		{% render_block "js" %}
+	</body>
+</html>
