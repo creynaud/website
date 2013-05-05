@@ -9,7 +9,7 @@ TEMPLATE_DEBUG = DEBUG
 ADMINS = MANAGERS = ()
 
 DATABASES = {'default': dj_database_url.config(
-    default="postgres://postgres@localhost:5432/babel"
+    default="postgres://postgres@localhost:5432/claire"
 )}
 
 TIME_ZONE = 'Europe/Berlin'
@@ -173,7 +173,7 @@ LOGGING = {
             'handlers': ['console', 'mail_admins'],
             'level': 'WARNING',
         },
-        'babel': {
+        'claire': {
             'handlers': ['console', 'mail_admins'],
             'level': 'INFO',
         },
