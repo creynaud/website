@@ -1,0 +1,157 @@
+{% extends "base.html" %}
+
+{% load sekizai_tags staticfiles %}
+
+{% block title %}Claire Reynaud's resume: Mobile & Cloud Software Engineer{% endblock %}
+
+{% block content %}
+<div class="container">
+	<div class="pitch">
+		<h1>Claire Reynaud</h1>
+		<p>Mobile and Cloud Software Engineer</p>
+	</div>
+</div>
+<div class="full-width-block">
+	<div class="container">
+		<div class="about-me">
+			<div class="top-section">
+				<h2>Experience</h2>
+				<div class="section margin">
+					<div class="dates">2011-Now</div>
+					<div class="description">
+						<h3>Mobile and Cloud software engineer at Epyx</h3>
+						<p>I am currently working as a senior software engineer at <a href="http://www.epyx.ch/">Epyx</a>,
+						a Swiss company providing cloud-ready mobile services to the enterprise market.
+						I am contributing to SAAS products (exopoint and exodoc) and to custom application developments for
+						Epyx customers.</p>
+						<br>
+						<p>I am doing mainly Django and web development right now, but depending on the priorities I also
+						still work on the native iOS and Android apps.</p>
+						<br>
+						<p>During my first year at Epyx, I did mainly iOS development, but I also contributed to the Android
+						code base. I investigated unit testing solutions to put in place some tests with mocks and code coverage
+						for both Android and iOS platforms. I also worked on putting in place some UI tests, with the Calabash
+						framework. I set up a Jenkins continuous integration server. Still on the mobile side, I implemented
+						the Epyx synchronization library that enables an Android or iOS application to replicate JSON documents
+						from the server to a mobile application. Documents can be updated offline.</p>
+					</div>
+				</div>
+				<div class="section margin">
+					<div class="dates">2009-2011</div>
+					<div class="description">
+						<h3>Mobile Virtualization Platform engineer at VMWare</h3>
+						<p>I took part in the creation of the <a href="http://www.vmware.com/products/mobile/">VMWare Mobile
+						Infrastructure</a>. This infrastructure is a JEE/Android stack that
+						allows a corporate IT group to provision, manage and update corporate virtual machines on
+						employee owned mobile devices.</p>
+						<br><p>I played a major role in the bootstrap of the project, especially regarding the web application
+						for mobile virtual machines administration. I put in place the GWT web UI, as well as the
+						REST services and Spring MVC, down to the JPA/Hibernate persistence layer. I worked
+						on all the tiers of this stack. I also worked on the Android application that communicates with the
+						server infrastructure to install, update and apply policies on the virtual machine.
+						</p>
+					</div>
+				</div>
+				<div class="section margin">
+					<div class="dates">2006-2008</div>
+					<div class="description">
+						<h3>SDK engineer at Trango Virtual Processors</h3>
+						<p>I created the Trango Eclipse plug-in for Trango Virtual Processors, a mobile virtualization
+						company acquired in 2008 by VMWare. With the Trango Eclipse plug-in, the Trango virtual
+						machine developers could write, deploy, monitor and debug Trango virtual machines on
+						devices. I was also on the customer field by leading evaluation projects, responding to support
+						requests and contributing to the Trango SDK documentation.</p>
+					</div>
+				</div>
+				<div class="section margin">
+					<div class="dates">End of 2005</div>
+					<div class="description">
+						<h3>JEE engineer at Kelkoo</h3>
+						<p>I took part in the Cars project at <a href="http://www.kelkoo.co.uk">Kelkoo</a>, at that time
+						a Yahoo company. I contributed to their JEE back-end.</p>
+					</div>
+				</div>
+			</div>
+			<div class="top-section margin">
+				<h2>Education</h2>
+				<div class="section">
+					<div class="dates">2000-2005</div>
+					<div class="description">
+						<h3>Masters in Computer science, <a href="http://ensimag.grenoble-inp.fr">ENSIMAG</a> (Grenoble, France)</h3>
+					</div>
+				</div>
+			</div>
+			<div class="top-section margin">
+				<h2>Skills</h2>
+				<div class="section">
+					<div class="skills">Web & Services</div>
+					<div class="skills-description">
+						<p>Django - REST Services - Spring MVC - HTML5 - CSS3 - Javascript</p>
+					</div>
+				</div>
+				<div class="section">
+					<div class="skills">Data persistence</div>
+					<div class="skills-description">
+						<p>JPA - Hibernate - Spring - Relational databases (Postgresql) - Couchdb (noSQL database)</p>
+					</div>
+				</div>
+				<div class="section">
+					<div class="skills">Mobile</div>
+					<div class="skills-description">
+						<p>Android - iOS</p>
+					</div>
+				</div>
+				<div class="section">
+					<div class="skills">Testing</div>
+					<div class="skills-description">
+						<p>JUnit/JMock - OCUnit/OCMock - Selenium - coverage - Continuous integration with Jenkins</p>
+					</div>
+				</div>
+				<div class="section">
+					<div class="skills">Tools</div>
+					<div class="skills-description">
+						<p>Git − maven/ant − IntelliJ/Eclipse - XCode/AppCode − Linux (Ubuntu)/Mac OS X</p>
+					</div>
+				</div>
+				<div class="section">
+					<div class="skills">Agile methodology</div>
+					<div class="skills-description">
+						<p>Scrum</p>
+					</div>
+				</div>
+			</div>
+			<div class="top-section margin">
+				<h2>Languages</h2>
+				<div class="section">
+					<div class="skills">French</div>
+					<div class="skills-description">
+						<p>Native Language</p>
+					</div>
+				</div>
+				<div class="section">
+					<div class="skills">English</div>
+					<div class="skills-description">
+						<p>Fluent</p>
+					</div>
+				</div>
+			</div>
+			<div class="top-section margin">
+				<h2>Interests</h2>
+				<div class="section">
+					<div class="skills">Music</div>
+					<div class="skills-description">
+						<p>Electric guitar</p>
+					</div>
+				</div>
+				<div class="section">
+					<div class="skills">Sport</div>
+					<div class="skills-description">
+						<p>Hiking, ski, via ferrata, rock climbing</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

@@ -1,5 +1,23 @@
 .container {
 	@include grid(12);
+	.top-section {
+		@include cols(12);
+		.section {
+			@include cols(12);
+			.dates {
+				@include cols(2);
+			}
+			.description {
+				@include cols(10);
+			}
+			.skills {
+				@include cols(2.5);
+			}
+			.skills-description {
+				@include cols(9.5);
+			}
+		}
+	}
 }
 
 header, footer, content {

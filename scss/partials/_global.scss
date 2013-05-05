@@ -81,7 +81,6 @@ header {
 
 .about-me {
 	color: $lightest-text-color;
-	margin-top: 30px;
 	line-height: 1.3em;
 	text-align: justify;
 	p {
@@ -93,6 +92,24 @@ header {
 		font-size: $big-font-size;
 		font-family: $title-font;
 		text-align: left;
+	}
+	.top-section {
+		margin-left: 0px !important;
+		margin-right: 0px !important;
+	}
+	.margin {
+		margin-top: 30px;
+	}
+	.section {
+		margin-right: 0px !important;
+		margin-left: 0px !important;
+		margin-bottom: 20px;
+		h3 {
+			margin: 0px 0px 20px;
+			font-size: $medium-font-size;
+			font-family: $title-font;
+			text-align: center;
+		}
 	}
 	a {
 		color: $lightest-text-color;
