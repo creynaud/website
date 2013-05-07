@@ -6,4 +6,5 @@ urlpatterns = patterns(
     '',
     url(r'^$', views.home, name='home'),
     url(r'^resume/$', views.resume, name='resume'),
+    url(r'^sitemap\.xml$', views.sitemap, name='sitemap'),
 )

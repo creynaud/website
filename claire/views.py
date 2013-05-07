@@ -9,3 +9,8 @@ def home(request):
 def resume(request):
     response = render(request, "resume.html")
     return response
+
+
+def sitemap(request):
+    response = render(request, "sitemap.xml")
+    return response
