@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 
 def home(request):
@@ -9,6 +9,10 @@ def home(request):
 def resume(request):
     response = render(request, "resume.html")
     return response
+
+
+def cv(request):
+    return redirect('resume')
 
 
 def sitemap(request):
